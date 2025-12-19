@@ -76,3 +76,5 @@ jobs:
 
       - name: Determine new version and publish
         run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
